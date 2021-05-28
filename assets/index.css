@@ -830,19 +830,6 @@ header
     }
 
     /* ------------------------------------- History ------------------------------------- */
-    /* .about
-    {
-        position: relative;
-        background: linear-gradient(rgb(17, 14, 49), rgb(8, 7, 24), rgb(12, 10, 34));
-        padding: 50px 0 50px;
-        color: white;
-    }
-
-    .about .content-section
-    {
-        margin-top: 8%;
-    } */
-
     .about .container 
     {
         margin: 0 0;
@@ -967,5 +954,101 @@ header
     .icon h5
     {
         font-size: 20px;
+    }
+}
+
+
+/* Screens for max-width 375px */
+@media only screen and (max-width: 375px) 
+{
+    /* ------------------------------------- Event ------------------------------------- */
+    .event
+    {
+        margin-bottom: 25%;
+    }
+
+    .events .text-section
+    {
+        margin: 35px 0;
+    }
+
+    /* ------------------------------------- History ------------------------------------- */
+    .about .about-box img
+    {
+        width: 170px;
+        height: 180px;
+    }
+
+    /* ------------------------------------- Contact ------------------------------------- */
+    .icon
+    {
+        margin: 30px 12px;
+    }
+
+    .icon img
+    {
+        width: 40px;
+    }
+
+    .icon h5
+    {
+        font-size: 15px;
+    }
+}
+
+/* Screens for max-width 320px */
+@media only screen and (max-width: 320px) 
+{
+    /* ------------------------------------- Event ------------------------------------- */
+    .event
+    {
+        margin-bottom: 25%;
+    }
+
+    .events .text-section
+    {
+        margin: 35px 0;
+    }
+
+    .events .text-section p
+    {
+        text-align: center;
+        width: 160px;
+        font-size: 11px;
+    }
+
+    /* ------------------------------------- Contact ------------------------------------- */
+    .user-query button
+    {
+        padding: 5px 0;
+        font-size: 12px;
+        transition: 0.2s ease-in;
+    }
+
+    .user-query button:hover
+    {
+        padding: 4px 0;
+        border: 2px solid rgb(241, 241, 241);
+        transition: 0.2s ease-in;
+    }
+ 
+    .social-icon-section
+    {
+        margin: 10% -5%;
+    }
+
+    .icon
+    {
+        margin: 30px 10px;
+    }
+
+    .icon img
+    {
+        width: 30px;
+    }
+
+    .icon h5
+    {
+        font-size: 14px;
     }
 }
