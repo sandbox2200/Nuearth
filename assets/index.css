@@ -91,6 +91,14 @@ header
     color: #fff;
 }
 
+.navbar-toggler {
+    margin-bottom: 2%;
+}
+
+.navbar-toggler-icon {
+    width: 20px;
+}
+
 /* ------------------------------------- Banner/Splash ------------------------------------- */
 .banner 
 {
@@ -476,7 +484,7 @@ header
 
 /* ----------------------------------------------- media Quaries ------------------------------------------ */
 
-/* Screens for max-width 758px */
+/* Screens for max-width 768px */
 @media only screen and (max-width: 768px) 
 {
     *

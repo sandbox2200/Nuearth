@@ -11,9 +11,8 @@
 <body>
     <header>
         <div class="nav-container">
-            <nav class="navbar navbar-expand-lg navbar-fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Logo</a>
                     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -58,8 +57,8 @@
                     Embark on important missions to benefit Mankind! Through out the
                     academic year <abbr title="Standard Earth Year">SEY</abbr> our
                     students will be exposed to exploring and doing extensive research
-                    that will bring about break-throughs in the science world across all
-                    establish colonies.
+                    that will bring about break-throughs in the science world across the
+                    Milky Way.
                 </p>
 
                 
@@ -74,11 +73,10 @@
                         
                             <div class="event-content">
                                 <p>
-                                    Embark on important missions to benefit Mankind! Through out the
-                                    academic year <abbr title="Standard Earth Year">SEY</abbr> our
-                                    students will be exposed to exploring and doing extensive research
-                                    that will bring about break-throughs in the science world across all
-                                    establish colonies.
+                                    Dyson Sphere Maintenance is a necessity to our survivial and technologic
+                                    developments. It is considered the most efficient way of harvesting power
+                                    however, also amongst the top dangerous methods. Our galaxy is in need of
+                                    engineers to create, maintain, and improve this technology.
                                 </p>
 
                                 <hr />
@@ -89,43 +87,24 @@
                 </div>
 
                 <div class="event">
-                    <h5>Dyson Sphere Maintenance</h5>
+                    <h5>Terraforming</h5>
                 
                     <div class="event-border">
                         <div class="event-display">
-                            <img src="assets/media/images/sun-11582_1920.jpg">
+                            <img src="assets/media/images/mars-11012_1920.jpg">
                 
                             <div class="event-content">
-                
+                                <p>
+                                    Terraforming is the deliberate process of modifying a planets details to 
+                                    be that of our ancestor planet Earth. A great example of terraformation
+                                    is that of Mars, once known as the Red Planet now is green and fully
+                                    capable of housing life. It is in our best interest to do more research
+                                    into this field.
+                                </p>
+                                
+                                <hr />
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="event">
-                    <h5>Dyson Sphere Maintenance</h5>
-                
-                    <div class="event-border">
-                        <div class="event-display">
-                            <img src="assets/media/images/sun-11582_1920.jpg">
-                
-                            <div class="event-content">
-                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="event">
-                    <h5>Dyson Sphere Maintenance</h5>
-                
-                    <div class="event-border">
-                        <div class="event-display">
-                            <img src="assets/media/images/sun-11582_1920.jpg">
-                
-                            <div class="event-content">
-                
-                            </div>
+                            <button class="event-button">View More</button>
                         </div>
                     </div>
                 </div>
@@ -139,22 +118,13 @@
             <h2>Nu-Earth A.I. History</h2>
             <div class="content-section">
                 <div class="about-box">
-                    <h3>Hey</h3>
+                    <h3>Nu-Earth Institution</h3>
                     <p>
-                        Embark on important missions to benefit Mankind! Through out the
-                        academic year <abbr title="Standard Earth Year">SEY</abbr> our
-                        students will be exposed <img src="assets/media/images/black-hole-92358_1920.jpg">to exploring and doing extensive research
-                        that will bring about break-throughs in the science world across all
-                        establish colonies. Embark on important missions to benefit Mankind! Through out the
-                        academic year <abbr title="Standard Earth Year">SEY</abbr> our
-                        students will be exposed to exploring and doing extensive research
-                        that will bring about break-throughs in the science world across all
-                        establish colonies. Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley of type and scrambled it to make a type specimen book.
+                        We were founded in the year 3391 on planet Kelp2. Our aim was to revolutionize
+                        the methods in which we use our space age technologies. We have been around for
+                        332 years now and have experimented and successfully allowed man to travel accross 
+                        the Milky Way.<img src="assets/media/images/black-hole-92358_1920.jpg"> We are an
+                        institution who has a variety of subjects on deep space careers.
                     </p>
                 </div>
             </div>
@@ -165,7 +135,7 @@
         <div class="container">
             <h2>Contact Us</h2>
             
-            <div class="contact-content-section">
+            <form class="contact-content-section" onsubmit="event.preventDefault()">
                 <div class="contact-form">
                     <div class="form">
                         <input type="text" placeholder="Full Name" title="fullName" onchange="updateForm(title, value)">
@@ -174,7 +144,7 @@
                         
                         <div class="user-query">
                             <textarea placeholder=" //: Add message here" title="message" onchange="updateForm(title, value)"></textarea>
-                            <button type="button" onclick="sendToDb()">Send Message</button>
+                            <button type="submit" name="submit">Send Message</button>
                         </div>
                     </div>
                 </div>
@@ -197,13 +167,17 @@
                         <h5>EarthChat</h5>
                     </div>
                 </div>
-            </div>
+
+                <div class="g-recaptcha" data-sitekey="6LdIOfkaAAAAADU00_LHJgZALT78RoktcJIotRnK" data-callback="verifyCaptcha"></div>
+                <div id="g-recaptcha-error"></div>
+            </form>
             <div class="notification">
                 <p>Your message was sent</p>
             </div>
         </div>
     </section>
 
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="assets/script/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
